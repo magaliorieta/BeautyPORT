@@ -62,7 +62,8 @@ a {
   border-radius: .25em;
   font: weight 50px;
   border: 0.5px solid #2b1818;
-  background-color: #b3aeae; }
+  background-color: #b3aeae;
+  white-space: nowrap; }
 
 .nav ul li a:hover {
   background-color: #1f0404;
@@ -141,8 +142,8 @@ footer {
   justify-content: end;
   align-content: center; }
 
-.socialMedia h5 {
-  margin: 2px; }
+.footer__socialmedia a {
+  margin: 5px; }
 
 @media only screen and (max-width: 400px) {
   .header {
@@ -166,9 +167,9 @@ footer {
     background-color: #111; } }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 1300px) {
   .header {
-    background-color: #db3055; }
+    background-color: #557197; }
   .header__text-text {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2; }
@@ -184,4 +185,8 @@ footer {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .header {
-    background-color: #E4E7EB; } }
+    background-color: #E4E7EB; }
+  .nav {
+    grid-column: 1 / span 4;
+    grid-row: 2 /span 2;
+    justify-content: space-evenly; } }
